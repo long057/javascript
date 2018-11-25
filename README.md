@@ -1,5 +1,4 @@
-# javascript
-dodge ball game
+# Dodge Ball
 
 1. 原生js，面向对象编程
 2. 游戏功能：
