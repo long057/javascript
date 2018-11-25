@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dodge Ball</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        body {
+            background: #326b86;
+            color: #fff;
+            font-size: 14px Arial, sans-serif;
+            text-align: center;
+            padding: 30px;
+        }
+        #outer {
+            position: relative;
+            margin: 30px auto;
+            width: 450px;
+            height: 400px;
+            background: #222;
+            padding-top: 50px;
+        }
+        #outer .ball {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 50px;
+            height: 50px;
+            border-radius: 100%;
+            background: #008040;
+            opacity: 0.6;
+            z-index: 99;
+        }
+        #outer #moveBall {
+            position: absolute;
+            top: 195px;
+            left: 195px;
+            cursor: move;
+            background: red;
+            width: 60px;
+            height: 60px;
+            border-radius: 100%;
+            opacity: 0.6;
+        }
+        .textCont {
+            width: 500px;
+            margin: 0 auto;
+            font-size: 14px;
+            line-height: 18px;
+        }
+    
+    </style>
+</head>
+<body>
+    <span id="timeCount">马上开始</span>
+    <div id="outer">
+        <div id="moveBall"></div>
+    </div>
+    <p class="textCont">游戏规则：鼠标移动到红色部分，拖动红块，避免碰到绿色部分，不要碰到黑色区域，坚持的时间越长你越牛X！是男人就至少坚持30秒，本游戏支持IE，Chrome，Firefox，safari等浏览器！
+    </p>
+    <script src="./index.js"></script>
+</body>
+</html>
